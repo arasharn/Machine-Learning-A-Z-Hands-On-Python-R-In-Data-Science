@@ -1,0 +1,39 @@
+---
+title: "Arash's Data Pre-Processing Template in R"
+output: html_notebook
+---
+### Loading data
+
+```{r}
+data = read.csv('Data.csv')
+summary(data)
+```
+
+### Replacing missed values
+```summary()``` result, shows two missed valies in *Age* and *Salaray*. Following these missed values are going to be replaced with the **mean** value of their columns.
+```{r}
+data$Age = ifelse(is.na(data$Age), ave(data$Age, FUN = function(x) mean(x, na.rm = TRUE)), data$Age)
+
+data$Salary = ifelse(is.na(data$Salary), ave(data$Salary, FUN = function(x) mean(x, na.rm = TRUE)), data$Salary)
+
+summary(data)
+```
+### Categorical values
+Based on the result of ```summary()```, *Country* and *Purchased* are categorical data.
+```{r}
+data$Country = factor(data$Country, levels = c("France", "Germany", "Spain"), labels = c(0, 1, 2))
+data$Purchased = factor(data$Purchased, levels = c("No", "Yes"), labels = c(0, 1))
+summary(data)
+```
+### Splitting data into training and testing sets
+```{r}
+split = sample.split(data$Purchased, SplitRatio = 0.8)
+
+Training_set = subset(data, split == TRUE)
+Test_set = subset(data, split == FALSE)
+```
+### Featur escaling
+```{r}
+Training_set[,2:3] = scale(Training_set[,2:3])
+Test_set[,2:3] = scale(Test_set[,2:3])
+```
