@@ -9,3 +9,6 @@ Folders are belong to different parts of the course (Updating):
 
 There are 2 files for each preject; `Jupyter Notebook` (Python 3.x is used) and `RMarkdown` 
      
+## Author
+
+* **Arash Nouri** [Eren](https://github.com/arasharn)
