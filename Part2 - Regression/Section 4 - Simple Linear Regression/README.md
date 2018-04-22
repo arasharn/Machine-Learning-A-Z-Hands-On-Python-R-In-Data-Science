@@ -1,5 +1,5 @@
 # Simple Linear regression 
-This folder contains all the solutions for a Simple Linear regression example. It oncludes:
+This folder contains all the solutions for a Simple Linear regression example. It includes:
 * `SLR.ipynb`: Data cleaning on `Jupyter Notebook` with `Python 3`
 * `SLR.rmd`: Data cleaning on `RMarkDown`
 
