@@ -10,6 +10,6 @@ This folders contains files for the data preprocessng. Following files can be fo
 * 'Python 3' and `Jupyter Notebok`
 * `RMarkDown`
 
-## Authore
+## Author
 
 * Arash Nouri [Eren](https://github.com/arasharn)
