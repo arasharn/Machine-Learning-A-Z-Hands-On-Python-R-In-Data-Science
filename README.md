@@ -8,7 +8,7 @@ Folders are belong to different parts of the course (Updating):
 
 ## Built with
 
-There are 2 files for each preject; `Jupyter Notebook` (Python 3.x is used) and `RMarkdown` 
+There are 2 files for each preject; [Jupyter Notebook](http://jupyter.org) ([Python 3.x](https://www.python.org) was used) and `RMarkdown` 
      
 ## Author
 
